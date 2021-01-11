@@ -77,6 +77,7 @@ Note the use of `0x2000` as the start address used for the jeff probe, which dif
 
 ### References
 https://github.com/blacksphere/blackmagic/wiki/Hacking
+
 https://askubuntu.com/questions/1243252/how-to-install-arm-none-eabi-gdb-on-ubuntu-20-04-lts-focal-fossa
 
 # Original README follows below
