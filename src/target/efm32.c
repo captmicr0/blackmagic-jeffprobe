@@ -246,7 +246,7 @@ static void efm32_add_flash(target *t, target_addr addr, size_t length,
 	target_add_flash(t, f);
 }
 
-char variant_string[40];
+static char variant_string[40];
 bool efm32_probe(target *t)
 {
 	/* Read the IDCODE register from the SW-DP */

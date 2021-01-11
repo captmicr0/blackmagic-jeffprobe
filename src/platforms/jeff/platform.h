@@ -36,9 +36,9 @@
 #define PLATFORM_HAS_BOOTLOADER
 #define PLATFORM_HAS_PRINTSERIAL
 
-#define BOARD_IDENT             "Black Magic Probe (SAMD), (Firmware " FIRMWARE_VERSION ")"
+#define BOARD_IDENT             "Black Magic Probe (SAMD2), (Firmware " FIRMWARE_VERSION ")"
 #define BOARD_IDENT_DFU		"Black Magic (Upgrade) for Launchpad, (Firmware " FIRMWARE_VERSION ")"
-#define DFU_IDENT               "Black Magic Firmware Upgrade (SAMD)"
+#define DFU_IDENT               "Black Magic Firmware Upgrade (SAMD2)"
 #define DFU_IFACE_STRING	"hid"
 
 #define BOARD_IDENT_UPD       "Black Magic (DFU Upgrade), SAMD21, (Firmware " FIRMWARE_VERSION ")"

@@ -47,7 +47,7 @@ static uint8_t USART_NUM = 0;
 /* Current Baud Rate setting */
 static uint32_t current_baud = 115200;
 
-usbd_device * usbdev;
+extern usbd_device * usbdev;
 
 /* input and output ring buffer */
 struct {
