@@ -162,10 +162,19 @@ bool nrf51_probe(target *t)
 		target_add_commands(t, nrf51_cmd_list, "nRF51");
 		return true;
 	case 0x00AC: /* nRF52832 Preview QFAA BA0 */
-    	case 0x00C7: /* nRF52832 Revision 1 QFAA B00 */
+  case 0x00C7: /* nRF52832 Revision 1 QFAA B00 */
 		t->driver = "Nordic nRF52";
 		target_add_ram(t, 0x20000000, 64*1024);
 		nrf51_add_flash(t, 0x00000000, 512*1024, NRF52_PAGE_SIZE);
+		nrf51_add_flash(t, NRF51_UICR, 0x100, 0x100);
+		target_add_commands(t, nrf51_cmd_list, "nRF52");
+		return true;
+
+	case 0x016E: /* nRF52810 */
+		// RAM/Flash info: https://infocenter.nordicsemi.com/topic/ps_nrf52810/memory.html?cp=4_5_0_3_1
+		t->driver = "Nordic nRF52";
+		target_add_ram(t, 0x20000000, 24*1024);
+		nrf51_add_flash(t, 0x00000000, 192*1024, NRF52_PAGE_SIZE);
 		nrf51_add_flash(t, NRF51_UICR, 0x100, 0x100);
 		target_add_commands(t, nrf51_cmd_list, "nRF52");
 		return true;
