@@ -55,7 +55,8 @@ make PROBE_HOST=jeff
 Flashing
 ----
 Get `dfu-util` from http://dfu-util.sourceforge.net/
-Install the WinUSB driver from [Zadig](https://zadig.akeo.ie/) if not already active.
+
+Install and run [Zadig](https://zadig.akeo.ie/). Select the WinUSB driver for the `Black Magic Firmware Update (SAMD2) (Interface *)` device in normal mode or `DFU Demo` device in DFU mode (see below) if they are not already active.
 
 The commands below assume a `cmd` prompt, not `WSL`.
 
