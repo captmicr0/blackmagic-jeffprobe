@@ -45,7 +45,7 @@ The above should output your public key. Add this key at github's ssh key page: 
 
 Clone this repo:
 ```
-git clone -b v1.6.2+nrf52810 https://github.com/sureshsitaula/blackmagic-jeffprobe
+git clone -b v1.6.2+nrf52840 https://github.com/captmicr0/blackmagic-jeffprobe-nrf52840
 ```
 
 Building
