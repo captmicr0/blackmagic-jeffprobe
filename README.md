@@ -1,5 +1,8 @@
-Jeff Probe + support for nrf52810
+Jeff Probe + support for nrf52840
 =================
+
+Added support for nRF52840 in target/nrf51.c
+Tested quickly on Holyiot-18010, successfully read registers (gdb, "info registers" after attached).
 
 ## Prereqs (tested under WSL (ubuntu) in Windows 10)
 
