@@ -1,0 +1,1 @@
+#define FIRMWARE_VERSION "v1.6.2-10-g6299c5d"
