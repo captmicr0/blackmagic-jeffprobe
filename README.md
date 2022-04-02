@@ -1,9 +1,10 @@
-Jeff Probe + support for nrf52840
+Jeff Probe + support for multiple MCU's
 =================
 
-Added support for nRF52840 in target/nrf51.c
-
-Tested quickly on Holyiot-18010, successfully read registers (gdb, "info registers" after attached).
+- Adding support for STM32G in 
+  - ???
+- Added support for nRF52840 in target/nrf51.c
+  - Tested quickly on Holyiot-18010, successfully read registers (gdb, "info registers" after attached).
 
 ## Prereqs (tested under WSL (ubuntu) in Windows 10)
 
@@ -46,7 +47,7 @@ The above should output your public key. Add this key at github's ssh key page: 
 
 Clone this repo:
 ```
-git clone -b v1.6.2+nrf52840 https://github.com/captmicr0/blackmagic-jeffprobe-nrf52840
+git clone -b v1.6.2+multisupport https://github.com/captmicr0/blackmagic-jeffprobe-nrf52840
 ```
 
 Building
