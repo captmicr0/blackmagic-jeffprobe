@@ -17,7 +17,7 @@ sudo ln -s /usr/lib/x86_64-linux-gnu/libtinfo.so.6 /usr/lib/x86_64-linux-gnu/lib
 
 cd /usr/share
 sudo wget https://developer.arm.com/-/media/Files/downloads/gnu-rm/10-2020q4/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz
-sudo tar xjf ./gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz2 -C /usr/share/
+sudo tar xjf ./gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux.tar.bz -C /usr/share/
 ```
 
 Add to ~/.profile:
@@ -47,7 +47,7 @@ The above should output your public key. Add this key at github's ssh key page: 
 
 Clone this repo:
 ```
-git clone -b v1.6.2+multisupport https://github.com/captmicr0/blackmagic-jeffprobe-nrf52840
+git clone -b v1.6.2+multisupport https://github.com/captmicr0/blackmagic-jeffprobe
 ```
 
 Building
