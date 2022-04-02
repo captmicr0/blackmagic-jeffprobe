@@ -1,9 +1,9 @@
 Jeff Probe + support for multiple MCU's
 =================
 
-- Adding support for STM32G in 
+- Adding support for **STM32G** in 
   - ???
-- Added support for nRF52840 in target/nrf51.c
+- Added support for **nRF52840** in target/nrf51.c
   - Tested quickly on Holyiot-18010, successfully read registers (gdb, "info registers" after attached).
 
 ## Prereqs (tested under WSL (ubuntu) in Windows 10)
